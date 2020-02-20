@@ -12,7 +12,7 @@ class Connection:
     """Connection to a Minecraft Pi game"""
     RequestFailed = "Fail"
 
-    def __init__(self, address, port):
+    def __init__(self, address="localhost", port=4701):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.connect((address, port))
         self.lastSent = ""
