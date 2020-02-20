@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__project__ = 'my_mcpi'
+__project__ = 'mcpi'
 __desc__ = 'Python library for the Minecraft Pi edition and RaspberryJuice API'
 __version__ = '1.1.0'
 __author__ = "Martin O'Hanlon"
