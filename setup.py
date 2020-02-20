@@ -2,11 +2,11 @@ from setuptools import setup
 
 __project__ = 'mcpi'
 __desc__ = 'Python library for the Minecraft Pi edition and RaspberryJuice API'
-__version__ = '1.1.0'
+__version__ = '1.1.0b'
 __author__ = "Martin O'Hanlon"
 __author_email__ = 'martin@ohanlonweb.com'
 __license__ = 'MIT'
-__url__ = 'https://github.com/martinohanlon/mcpi'
+__url__ = 'https://github.com/eteeeeeerminal/mcpi'
 
 __classifiers__ = [
     "Development Status :: 5 - Production/Stable",
