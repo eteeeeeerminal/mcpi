@@ -28,7 +28,7 @@ class Connection:
             e += "Last Message: <%s>\n"%self.lastSent.strip()
             sys.stderr.write(e)
 
-    def send(self, f, *data):
+    def send(self, *data):
         """
         Sends data. Note that a trailing newline '\n' is added here
 
@@ -36,7 +36,7 @@ class Connection:
         which is mildly distressing as it can't encode all of Unicode.
         """
 
-        s = b"".join([f, b"(", flatten_parameters_to_bytestring(data), b")", b"\n"])
+        s = b"".join([flatten_parameters_to_bytestring(data), b"\n"])
 
         self._send(s)
 
